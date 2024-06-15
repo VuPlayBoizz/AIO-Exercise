@@ -1,4 +1,6 @@
 import math
+message = "n must be greater than 0"
+
 
 def factorial(n):
     total = 1
@@ -7,10 +9,11 @@ def factorial(n):
         n = n - 1
     return total
 
+
 def approx_sin(x, n):
     if n <= 0:
-        print("n must be greater than 0")
-        return
+        print(message)
+
     else:
         ans = 0
         for i in range(0, n):
@@ -18,10 +21,10 @@ def approx_sin(x, n):
             ans += cal
         print(ans)
 
+
 def approx_cos(x, n):
     if n <= 0:
-        print("n must be greater than 0")
-        return
+        print(message)
     else:
         ans = 0
         for i in range(0, n):
@@ -29,10 +32,11 @@ def approx_cos(x, n):
             ans += cal
         print(ans)
 
+
 def approx_sinh(x, n):
     if n <= 0:
-        print("n must be greater than 0")
-        return
+        print(message)
+
     else:
         ans = 0
         for i in range(0, n):
@@ -40,10 +44,11 @@ def approx_sinh(x, n):
             ans += cal
         print(ans)
 
+
 def approx_cosh(x, n):
     if n <= 0:
-        print("n must be greater than 0")
-        return
+        print(message)
+
     else:
         ans = 0
         for i in range(0, n):
@@ -51,8 +56,9 @@ def approx_cosh(x, n):
             ans += cal
         print(ans)
 
+
 if __name__ == '__main__':
-    approx_sin(x = 3.14, n = 10)
-    approx_cos(x = 3.14, n = 10)
-    approx_sinh(x = 3.14, n = 10)
-    approx_cosh(x = 3.14, n = 10)
+    approx_sin(x=3.14, n=10)
+    approx_cos(x=3.14, n=10)
+    approx_sinh(x=3.14, n=10)
+    approx_cosh(x=3.14, n=10)
